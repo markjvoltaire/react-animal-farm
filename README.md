@@ -1,5 +1,5 @@
 # React Animal Farm
-
+**Use this app as a template for your deliverable!**
 ### Learning Objectives
 
 - Describe and utilize the classic React gotchas:
