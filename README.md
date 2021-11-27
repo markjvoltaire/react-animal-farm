@@ -21,8 +21,8 @@ There is a list of animals provided for you in `data.js`, as well as an empty `<
 
 ### Acceptance Criteria
 
-- `<Main />` component should use a `.map` to loop through and render each animal listed in `data.js`
-- There should be an <Animal /> component rendered for each item in `data.js` with props passed dynamically
+- `<Main />` should import `background.png` and set it as a background image on the `<main>` element
+- `<Main />` component should use a `.map` to loop through and render an `<Animal />` component for each animal listed in `data.js`
 - Props should be destructured properly in `<Animal />`
 - Animals should be positioned dynamically using the `style` attribute in JSX and props
 - <Animal /> should utlize the existing classes in `Animal.css`
