@@ -2,26 +2,42 @@
 
 ### Learning Objectives
 
-- Describe the classic React gotchas:
-    - className
-    - style&#61;{<!-- -->{ background: &#39;magenta&#39; }}Images:import img from &#39;./img.jpeg&#39; , src&#61;{img} , putting assets in the public directorythe need for fragments and returning single children from component render methods"
-- {{Learning Objective 2}}
-- {{Learning Objective 3}}
+- Describe and utilize the classic React gotchas:
+  - Styles: using className to set styles versus `style = {{ background: 'magenta' }}`
+  - Images: importing images versus putting assets in the public directory
+  - The need for fragments and returning single children from component render methods"
+- Use Netlify to deploy a React app
+- Use attributes in parent components to pass data down to child components as props
+- Use {} as "portals" in the render method to do JavaScript inside our HTML
+- Use .map to iterate over an array and render new elements for each item in an array.
+- Use jsx to product & render a React component
 
 ### Description
 
-{{Deliverable description}}
+Welcome to the Alchemy Farm! For this deliverable, you will practice creating functional components, mapping through lists and rendering a component for each item.
 
-### Goal
+There is a list of animals provided for you in `data.js`, as well as an empty `<Main />` component and an empty `<Animal />` component. You need to add the code to display the animals by mapping through the list provided and rendering an `<Animal />` component for each animal. The final product should look like this:
+![](mockup.png)
 
-{{Deliverable goal}}
+### Acceptance Criteria
+
+- `<Main />` component should use a `.map` to loop through and render each animal listed in `data.js`
+- There should be an <Animal /> component rendered for each item in `data.js` with props passed dynamically
+- Props should be destructured properly in `<Animal />`
+- Animals should be positioned dynamically using the `style` attribute in JSX and props
+- <Animal /> should utlize the existing classes in `Animal.css`
+- App should be deployed on Netlify
 
 ### Rubric
-| Task | Points |
-| --   | --     |
-| {{Task A}} | 4   |
-| {{Task B}} | 4   |
-| {{Task C}} | 2   |
+
+| Task                                                                        | Points |
+| --------------------------------------------------------------------------- | ------ |
+| Uses a `.map` to render `<Animal />` component for each animal in `data.js` | 4      |
+| Properly destructures and uses props in `<Animal />`                        | 2      |
+| Dynamically sets the `style` attribute in JSX to position the animals       | 2      |
+| Utilizes existing classes to properly display animals                       | 1      |
+| Deployed on Netlify                                                         | 1      |
 
 ### Image Attribution
+
 Backgrounf Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=147828">OpenClipart-Vectors</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=147828">Pixabay</a>
