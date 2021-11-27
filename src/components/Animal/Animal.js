@@ -1,5 +1,5 @@
-import React from 'react';
-import './Animal.css';
+import React from 'react'
+import './Animal.css'
 
 export default function Animal({ name, says, top, left, type }) {
   return (
@@ -8,5 +8,5 @@ export default function Animal({ name, says, top, left, type }) {
       <span className="name">{name}</span>
       <span>{says}</span>
     </div>
-  );
+  )
 }

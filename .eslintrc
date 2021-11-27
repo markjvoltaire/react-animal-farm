@@ -1,8 +1,12 @@
 {
-  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:react-hooks/recommended"
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended"
   ],
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaVersion": 2020,
     "ecmaFeatures": {
       "impliedStrict": true,
       "jsx": true
@@ -32,11 +36,11 @@
       }
     ],
     "quotes": [
-      "error", 
+      "error",
       "single",
-      { 
+      {
         "avoidEscape": true,
-        "allowTemplateLiterals": true 
+        "allowTemplateLiterals": true
       }
     ],
     "no-multi-spaces": [
@@ -52,12 +56,19 @@
         "builtinGlobals": true
       }
     ],
-    "semi": ["error", "always"],
+    "semi": ["error", "never"],
     "space-in-parens": ["error"],
     "space-infix-ops": "error",
     "object-curly-spacing": ["error", "always"],
     "comma-spacing": "error",
-    "space-before-function-paren": ["error", "never"],
+    "space-before-function-paren": [
+      "error",
+      {
+        "asyncArrow": "always",
+        "anonymous": "never",
+        "named": "never"
+      }
+    ],
     "keyword-spacing": [
       "error",
       {
@@ -66,7 +77,8 @@
       }
     ],
     "array-bracket-spacing": "error",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "no-unused-vars": ["warn"]
   },
   "settings": {
     "react": {
