@@ -3,13 +3,14 @@ import './Main.css'
 import background from '../../background.png'
 import { animals } from '../../data'
 
-import Animal from '../Animal/Animal'
+import Animal from '../pets/Animal'
 
 export default function Main() {
-  const styles = { backgroundImage: `url(${background})` }
   return (
-    <main style={styles}>
-      <Animal key={Animal.type} {...Animal} />
+    <main style={{ backgroundImage: `url(${background})` }}>
+      {animals.map((animal) => (
+        <Animal key={animal.type} {...animal} />
+      ))}
     </main>
   )
 }
